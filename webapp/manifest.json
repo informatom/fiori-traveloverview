@@ -241,7 +241,17 @@
                         }
                     ]
                 }
-            }
+            },
+            "CARD_003": {
+              "model": "mainModel",
+              "template": "sap.ovp.cards.charts.analytical",
+              "settings": {
+                  "title": "Spending By Airlines",
+                  "entitySet": "Booking",
+                  "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#ToBookingAnalysis",
+                  "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#FlightPriceByAirlineDonut"
+              }
+          }
         }
     },
     "sap.fiori": {
