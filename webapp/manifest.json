@@ -59,6 +59,21 @@
                     "localUri": "annotations/annotation0.xml"
                 }
             }
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "sap-fe-demo-traveloverview-inbound": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "Travel",
+                    "action": "overview",
+                    "title": "{{flpTitle}}",
+                    "subTitle": "{{flpSubtitle}}",
+                    "icon": ""
+                }
+            }
         }
     },
     "sap.ui": {
@@ -243,15 +258,15 @@
                 }
             },
             "CARD_003": {
-              "model": "mainModel",
-              "template": "sap.ovp.cards.charts.analytical",
-              "settings": {
-                  "title": "Spending By Airlines",
-                  "entitySet": "Booking",
-                  "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#ToBookingAnalysis",
-                  "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#FlightPriceByAirlineDonut"
-              }
-          }
+                "model": "mainModel",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "Spending By Airlines",
+                    "entitySet": "Booking",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#ToBookingAnalysis",
+                    "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#FlightPriceByAirlineDonut"
+                }
+            }
         }
     },
     "sap.fiori": {
@@ -260,5 +275,9 @@
     },
     "sap.ui.generic.app": {
         "settings": {}
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "sap-fe-demo-traveloverview"
     }
 }
